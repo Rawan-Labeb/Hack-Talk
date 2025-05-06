@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>Hack Talk - To Be A Good Presenter</title>
+    <!-- Meta SEO -->
+    <meta name="title" content="Hack Talk Page">
+    <meta name="description" content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../assets/logo 2.png">
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body>
+
+    <div class="bg-[#FFFFFF] flex flex-col lg:flex-row p-[0_0_0_0px] w-full box-sizing-border">
+        <div class="m-[35px_41px_20px_0px] lg:m-[35px_41px_205px_0px] flex flex-col pl-[40px] box-sizing-border">
+            <a href="index.html" class="m-[0_0_126px_0] flex flex-row self-start w-[fit-content] box-sizing-border">
+                <img src="../assets/logo 2.png" class="m-[1px_8px_4px_0] w-[40px] h-[40px]" />
+                <div class="m-[8px_0_0_0] inline-block break-words font-['Poppins'] font-bold text-[24px] bg-[linear-gradient(90deg,#60B0D7_50%,#162E39_139.4%)] 
+                    text-[transparent] bg-clip-text">
+                    HackTalk
+                </div>
+            </a>
+            <div class="md:mx-auto 2xl:m-[0_25px_0_0] flex flex-row md:justify-center w-full md:w-[520px] xl:w-[615px] 
+                h-full md:h-[520px] xl:h-[615px] box-sizing-border">
+                <img src="../assets/login.jpg" class=" md:mx-auto 2xl:m-[0_25px_0_0] w-full md:w-[520px] xl:w-[615px] h-full md:h-[520px] xl:h-[615px]" />
+            </div>
+        </div>
+        <div class="bg-[#FAFAFA] relative flex flex-col justify-center items-center p-[60px_54.9px_0_52px] lg:p-[60px_25px_0_23px] xl:p-[60px_9px_0_10px] w-full">
+            <div class="m-[0_24.3px_8px_0] inline-block break-words font-['Roboto'] font-semibold text-[30px] xl:text-[40px] text-[#4692B6]">
+                Welcome back!
+            </div>
+            <div class="m-[0_0_55px_23.9px] inline-block break-words font-['Roboto_Flex'] font-normal text-[18px] xl:text-[24px] text-[#666060]">
+                Please login to continue using our website
+            </div>
+
+            <form id="login-form" action="#">
+                <div class="field email">
+                    <div class="input-area mb-[30px] w-full md:w-[660px] lg:w-[350px] xl:w-[550px] 2xl:w-[660px]">
+                        <input id="email" type="email" class="rounded-[40px] bg-[#F1F0E8] m-[0_0_2px_2.9px] p-[21px_32px_20px_32px] 
+                            w-full md:w-[660px] lg:w-[350px] xl:w-[550px] 2xl:w-[660px] h-[64px] break-words font-['Roboto'] font-medium 
+                            text-[20px] text-[#B1B1B1] focus:text-SteelBlue focus:bg-white focus:outline-SteelBlue" autocomplete="off" placeholder="Enter your email" />
+                        <div id="errorMessage" class="text-[#F14E2E] text-left mb-8 ml-5 text-[13px] md:text-[16px] hidden"></div>
+
+                    </div>
+                </div>
+                <div class="field password">
+                    <div class="input-area mb-[20px] w-full md:w-[660px] lg:w-[350px] xl:w-[550px] 2xl:w-[660px]">
+                        <input id="password" type="password" class="rounded-[40px] bg-[#F1F0E8] m-[0_0_2px_2.9px] p-[21px_32px_20px_32px] 
+                            w-full md:w-[660px] lg:w-[350px] xl:w-[550px] 2xl:w-[660px] h-[64px] break-words font-['Roboto'] font-medium text-[20px] 
+                            text-[#B1B1B1] focus:text-SteelBlue focus:bg-white focus:outline-SteelBlue" placeholder=" Enter password ">
+                        <img id="togglePassword" src="../assets/tabler_eye-closed.svg" class="cursor-pointer absolute top-[43.5%] left-[66%] md:left-[79%] 
+                          lg:top-[45%] lg:left-[73%] xl:top-[46.8%] xl:left-[80%] 2xl:top-[46.8%] 2xl:left-[83%]" alt="">
+                        <div id="error" class="text-[#F14E2E] text-left mb-8 ml-5 text-[13px] md:text-[16px] hidden"></div>
+                    </div>
+                </div>
+                <div class=" m-[0_0_45px_0px] xl:m-[0_0_45px_19.9px] flex flex-row justify-between w-full md:w-[660px] lg:w-[350px] xl:w-[550px] 2xl:w-[660px]">
+                    <div class="flex flex-row ">
+
+                        <label class="relative inline-flex items-center cursor-pointer mr-2">
+                            <input type="checkbox" value="lsRememberMe" id="rememeberMe" class="sr-only peer">
+                            <div class="group peer ring-0  bg-[#c0c0c0] rounded-full outline-none duration-1000 after:duration-300 w-12 h-6  shadow-md  
+                            peer-focus:outline-none  after:content-[''] after:rounded-full after:absolute peer-checked:after:rotate-180 after:bg-white 
+                            after:outline-none after:h-5 after:w-5 after:top-0.5 after:left-0.5   peer-checked:after:translate-x-6  peer-checked:bg-SteelBlue">
+                          
+                            </div>
+                        </label>
+                        <span class="break-words font-['Roboto'] font-medium text-[16px] text-[#525252]">
+                              Remember me
+                        </span>
+                    </div>
+                    <a href="forgetPass.html" class="pass-text break-words font-['Roboto'] font-medium text-[16px] text-[#525252]">
+                  Forgot  password ?
+                    </a>
+                </div>
+                <div class="relative m-[0_0_16px_0] w-full md:w-[660px] lg:w-[350px] xl:w-[550px] 2xl:w-[660px] flex flex-row justify-center">
+                    <button type="submit" value="submit" onclick="validateForm(event);RememberMe()" class="rounded-[40px] bg-[#4692B6] 
+                        relative m-[0_0_16px_2.9px] flex flex-row justify-center p-[12px_0.3px_12px_0] w-full md:w-[660px] lg:w-[350px] xl:w-[550px] 2xl:w-[660px]  
+                        box-sizing-border hover:shadow-md hover:shadow-SteelBlue/20 duration-200 break-words font-['Roboto'] font-medium text-[24px] text-[#FFFFFF]">
+                        Login
+                    </button>
+                </div>
+            </form>
+            <div class="m-[0_0_63px_2.5px] flex flex-col items-end w-[fit-content] box-sizing-border">
+                <div class="sign-txt flex flex-row w-[fit-content] box-sizing-border">
+                    <span class="m-[0_2.3px_0_0] break-words font-['Roboto_Flex'] font-medium text-[16px] text-[#999696]">
+                        Don’t have an account ? 
+                    </span>
+                    <a href="signup.html" class="break-words font-['Roboto'] font-medium text-[16px] text-[#4692B6]">
+                        Sign up  
+                    </a>
+                </div>
+
+            </div>
+            <div class="flex flex-col items-center w-full md:w-[208.09px] lg:w-[130px] xl:w-[550px] 2xl:w-[660px] box-sizing-border">
+                <div class="m-[0_0_16.1px_0] flex flex-row justify-between  w-full md:w-[208.09px] lg:w-[130px] xl:w-[550px] 2xl:w-[660px] box-sizing-border">
+                    <div class="bg-[#E1D6D6] m-[10.8px_0_10.2px_0] flex-none 2xl:w-[208.09px]  h-[2px]">
+                    </div>
+                    <span class="break-words font-['Roboto'] font-medium text-[20px] lg:text-[17px] xl:text-[20px] text-[#8B8B8B]">
+                        Or continue with 
+                    </span>
+                    <div class="bg-[#E1D6D6] m-[10.8px_0_10.2px_0] flex-none  2xl:w-[208.09px]  h-[2px]">
+                    </div>
+                </div>
+                <div class="m-[0_0_0_3.9px] flex flex-row w-[99px] box-sizing-border">
+                    <div class=" m-[0_13.7px_0_0] w-[42.7px] h-[42.7px]">
+                        <a href="https://www.facebook.com"> <img src="../assets/Facebook (2).png" alt=""></a>
+                    </div>
+                    <div class="w-[42.7px] h-[42.7px]">
+                        <a href=""> <img src="../assets/Google.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to validate the login form
+        function validateForm(e) {
+            e.preventDefault()
+                // Get the values of email and password fields
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            // Get error message elements
+            const errorText = document.getElementById('errorMessage');
+            const error = document.getElementById('error');
+            // Get email and password input elements
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+
+            // Reset input borders and hide previous error messages
+            emailInput.style.border = "1px solid #B1B1B1";
+            emailInput.style.outline = "none";
+            passwordInput.style.border = "1px solid #B1B1B1";
+            passwordInput.style.outline = "none";
+            errorText.innerHTML = '';
+            error.innerHTML = '';
+
+            // Check if email is empty
+            if (email === "") {
+                errorText.innerHTML = "Please enter your email address.";
+                emailInput.style.border = "1px solid #F14E2E";
+                emailInput.style.outline = "1px solid #F14E2E";
+                errorText.classList.remove('hidden');
+                return false;
+            }
+
+            // Check if email format is valid
+            if (!isValidEmail(email)) {
+                errorText.innerHTML = "Please enter a valid email address.";
+                emailInput.style.border = "1px solid #F14E2E";
+                emailInput.style.outline = "1px solid #F14E2E";
+                errorText.classList.remove('hidden');
+                return false;
+            }
+
+            // Check if password is empty
+            if (password === "") {
+                error.innerHTML = "Please enter your password.";
+                passwordInput.style.border = "1px solid #F14E2E";
+                passwordInput.style.outline = "1px solid #F14E2E";
+                error.classList.remove('hidden');
+                return false;
+            }
+
+            if (email) {
+                localStorage.setItem('email', email);
+            } else {
+                alert('Please enter a valid email address.');
+            }
+
+
+            const userData = {
+                email: email,
+                password: password,
+            };
+            const apiUrl = "https://0702-156-197-135-58.ngrok-free.app/api/v1/login";
+            const headers = {
+                "Content-Type": "application/json",
+            };
+            console.log(userData)
+            fetch(apiUrl, {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(userData),
+                })
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
+                .then((data) => {
+                    if (data.status) {
+                        console.log("User authenticated successfully!");
+                        const token = data.data.access_token;
+                        console.log(token);
+                        localStorage.setItem('token', token);
+                        const store_email = data.data.email;
+                        console.log(email);
+                        localStorage.setItem('email', email);
+                        window.location.href = "index.html";
+                    } else {
+                        console.log("Authentication failed!");
+                        alert("Authentication failed! Please try again.");
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                    alert("An error occurred. Please try again later.");
+                });
+
+            return true;
+        }
+
+        // Function to validate email format using regular expression
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+
+        // Get the elements for the "Remember Me"
+        const rmCheck = document.getElementById("rememeberMe"),
+            passInput = document.getElementById("password"),
+            emailInput = document.getElementById("email");
+
+        // When the page loads, fill the email and password fields if there are saved values in localStorage
+        window.onload = function() {
+            if (localStorage.checkbox && localStorage.checkbox !== "") {
+                rmCheck.setAttribute("checked", "checked");
+                passInput.value = localStorage.password;
+                emailInput.value = localStorage.email;
+            } else {
+                rmCheck.removeAttribute("checked");
+                passInput.value = "";
+                emailInput.value = "";
+            }
+        };
+
+        // Function to handle "Remember Me" functionality
+        function RememberMe() {
+            // Check if the "Remember Me" checkbox is checked and both email and password fields are not empty
+            if (rmCheck.checked && emailInput.value !== "" && passInput.value !== "") {
+                // If checked, save the email, password, and checkbox state in localStorage
+                localStorage.email = emailInput.value;
+                localStorage.password = passInput.value;
+                localStorage.checkbox = rmCheck.value;
+            } else {
+                // If not checked, clear the saved data in localStorage
+                localStorage.email = "";
+                localStorage.password = "";
+                localStorage.checkbox = "";
+            }
+        }
+
+
+        // Hide and Show Password
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function() {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                togglePassword.src = '../assets/Eye.svg';
+            } else {
+                passwordInput.type = 'password';
+                togglePassword.src = '../assets/tabler_eye-closed.svg';
+            }
+        });
+
+
+
+
+
+        // Get the values of email and password fields
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+    </script>
+</body>
+
+</html>

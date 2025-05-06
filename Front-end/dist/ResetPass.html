@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>Hack Talk - To Be A Good Presenter</title>
+    <!-- Meta SEO -->
+    <meta name="title" content="Hack Talk Page">
+    <meta name="description" content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../assets/logo 2.png">
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="font-Roboto">
+    <div class="bg-[#FFFFFF] flex flex-col lg:flex-row p-[0_0_0_0px] w-full box-sizing-border">
+        <div class="m-[35px_41px_20px_0px] lg:m-[35px_41px_205px_0px] flex flex-col box-sizing-border">
+            <a href="index.html" class=" m-[0_0_12px_0] lg:m-[0_0_126px_0] flex flex-row self-start w-[fit-content] box-sizing-border">
+                <img src="../assets/logo 2.png" class="m-[1px_8px_4px_0] w-[40px] h-[40px]" />
+                <div class="m-[8px_0_0_0] inline-block break-words font-['Poppins'] font-bold text-[24px] bg-[linear-gradient(90deg,#60B0D7_50%,#162E39_139.4%)] text-[transparent] bg-clip-text">
+                    HackTalk
+                </div>
+            </a>
+            <div class="md:mx-auto 2xl:m-[0_25px_0_0] flex flex-row w-full md:w-[520px] xl:w-[620px] box-sizing-border">
+                <img src="../assets/reset.jpg" class="md:mx-auto 2xl:m-[0_25px_0_0] w-full md:w-[520px] xl:w-[600px]" />
+            </div>
+        </div>
+        <div class="bg-[#FAFAFA] relative flex flex-col  p-[60px_54.9px_0_52px] md:p-[250px_54.9px_0_23px] xl:p-[250px_9px_0_10px] items-center w-full">
+            <div class="m-[0_0_8px_0px] block break-words font-['Roboto'] font-semibold text-[30px] 2xl:text-[40px] text-[#4692B6]">
+                Reset Password
+            </div>
+            <div class="m-[0_0_45px_1px] block text-center break-words font-['Roboto'] font-normal text-[18px] 2xl:text-[24px] text-[#666060]">
+                Now you can reset your old password
+            </div>
+            <div class="w-full md:w-[660px] lg:w-[380px] xl:w-[550px] 2xl:w-[660px]">
+                <input id="newPassword" class="rounded-[40px] bg-[#F1F0E8] m-[0_0_20px_0] p-[21px_32px_20px_32px] w-full md:w-[660px] lg:w-[380px] xl:w-[550px] 2xl:w-[660px] box-sizing-border  break-words placeholder:font-['Roboto'] placeholder:font-medium text-[20px] placeholder:text-[#B1B1B1] focus:outline-none focus:border-SteelBlue focus:border-2 focus:bg-white"
+                    placeholder="Enter new password" />
+            </div>
+            <div class="mb-12 w-full md:w-[660px] lg:w-[380px] xl:w-[550px] 2xl:w-[660px]">
+                <input id="confirmPassword" class="rounded-[40px] bg-[#F1F0E8] m-[0_0_10px_0] p-[21px_32px_20px_32px] w-full md:w-[660px] lg:w-[380px] xl:w-[550px] 2xl:w-[660px] box-sizing-border  break-words placeholder:font-['Roboto'] placeholder:font-medium text-[20px] placeholder:text-[#B1B1B1] focus:outline-none focus:border-SteelBlue focus:border-2 focus:bg-white"
+                    placeholder="Confirm new password" />
+                <div id="error" class="text-[#F14E2E] ml-6 text-left  text-[13px] md:text-[16px] hidden"></div>
+
+            </div>
+            <div class="relative m-[0_0_16px_0] w-full md:w-[660px] lg:w-[380px] xl:w-[550px] 2xl:w-[660px] flex flex-row justify-center ">
+                <button id="resetButton" class=" rounded-[40px] p-[12px_0_12px_0.5px] w-full md:w-[660px] lg:w-[380px] xl:w-[550px] 2xl:w-[660px]  box-sizing-border bg-[#4692B6] break-words font-['Roboto'] font-medium text-[24px] text-[#FFFFFF] hover:shadow-md hover:shadow-SteelBlue/20 ">
+                      Reset
+                </button>
+            </div>
+            <div class="relative flex flex-row justify-center mb-4 lg:mb-0 p-[12px_0.5px_0_0] w-full md:w-[660px] lg:w-[380px] xl:w-[550px] 2xl:w-[660px] box-sizing-border">
+                <button id="cancelButton" class="rounded-[40px] border-[1px_solid_#4692B6]  bg-[#FFFFFF] p-[12px_0.5px_12px_0] w-[660px] box-sizing-border break-words font-['Roboto'] font-medium text-[24px] text-[#4692B6] border-2 border-SteelBlue hover:shadow-md hover:shadow-SteelBlue/20 ">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById('resetButton').addEventListener('click', async function() {
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            const passwordRegex = /^(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z\d!@#$%^&*]{8,}$/;
+
+            if (newPassword || confirmPassword) {
+                if (newPassword === confirmPassword) {
+                    if (passwordRegex.test(newPassword)) {
+                        try {
+                            const response = await fetch('https://f681-156-197-192-240.ngrok-free.app/api/v1/reset-password', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify({
+                                    email: email
+                                })
+                            });
+
+                            if (response.status) {
+                                document.getElementById('newPassword').value = '';
+                                document.getElementById('confirmPassword').value = '';
+                                window.location.href = 'successReset.html';
+                            } else {
+                                throw new Error('Error resetting password');
+                            }
+                        } catch (err) {
+                            document.getElementById("error").classList.remove('hidden');
+                            document.getElementById("error").innerHTML = "Error sending password to server.";
+                            console.error('Error:', err);
+                        }
+                    } else {
+                        document.getElementById("error").classList.remove('hidden');
+                        document.getElementById("error").innerHTML = "Password must contain at least 1 number or special character and be at least 8 characters long.";
+                        document.getElementById("newPassword").style.border = "1px solid #F14E2E";
+                        document.getElementById("confirmPassword").style.border = "1px solid #F14E2E";
+                    }
+                } else {
+                    document.getElementById("error").classList.remove('hidden');
+                    document.getElementById("error").innerHTML = "Passwords do not match.";
+                    document.getElementById("newPassword").style.border = "1px solid #F14E2E";
+                    document.getElementById("confirmPassword").style.border = "1px solid #F14E2E";
+                }
+            } else {
+                document.getElementById("error").classList.remove('hidden');
+                document.getElementById("error").innerHTML = "Please enter a new password.";
+                document.getElementById("newPassword").style.border = "1px solid #F14E2E";
+                document.getElementById("confirmPassword").style.border = "1px solid #F14E2E";
+            }
+        });
+
+        document.getElementById('cancelButton').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+
+</html>
